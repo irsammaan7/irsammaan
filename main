@@ -1,0 +1,9 @@
+echo "--- Compiling Java ---" 
+javac HelloWorld.java
+if [ $? -ne 0 ]; then 
+    echo "ERROR: Java compilation failed." 
+exit 1 
+fi 
+echo "--- Executing Java Program ---" 
+java HelloWorld 
+echo "Java Build and Test SUCCESS"
